@@ -3,26 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1F56E1DB26C53B400024E451 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E1DA26C53B400024E451 /* AppDelegate.m */; };
-		1F56E1DE26C53B410024E451 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E1DD26C53B410024E451 /* SceneDelegate.m */; };
 		1F56E1E126C53B410024E451 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E1E026C53B410024E451 /* ViewController.m */; };
 		1F56E1E426C53B410024E451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F56E1E226C53B410024E451 /* Main.storyboard */; };
 		1F56E1E626C53B430024E451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F56E1E526C53B430024E451 /* Assets.xcassets */; };
 		1F56E1E926C53B430024E451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F56E1E726C53B430024E451 /* LaunchScreen.storyboard */; };
 		1F56E1EC26C53B430024E451 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E1EB26C53B430024E451 /* main.m */; };
-		7F39B15C5BEB0BF1BAE6DF37 /* libPods-TextureExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD9C1DB259C9FAF039D1E8FF /* libPods-TextureExample.a */; };
+		1F91311E26C7C36600F27D7B /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91311D26C7C36600F27D7B /* ExampleViewController.m */; };
+		1F91312226C7C3D200F27D7B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91312126C7C3D200F27D7B /* BaseViewController.m */; };
+		1F91312726C7C87C00F27D7B /* SimpleNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91312626C7C87C00F27D7B /* SimpleNode.m */; };
+		1F91312B26C7CC4700F27D7B /* NodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91312A26C7CC4700F27D7B /* NodeViewController.m */; };
+		1F91312F26C7D70000F27D7B /* SpecNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91312E26C7D70000F27D7B /* SpecNode.m */; };
+		1F91313526CA028100F27D7B /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91313426CA028100F27D7B /* UIImage+Additions.m */; };
+		1F91313926CA047100F27D7B /* TableNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91313826CA047100F27D7B /* TableNodeController.m */; };
+		1F91313D26CA073900F27D7B /* CardCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91313C26CA073900F27D7B /* CardCellNode.m */; };
+		1F91315F26CB48FD00F27D7B /* PriceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91315E26CB48FD00F27D7B /* PriceNode.m */; };
+		9D92BF42B787EF799DB6BC39 /* Pods_TextureExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB25CD6244D178073B45E3D /* Pods_TextureExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1F56E1D626C53B400024E451 /* TextureExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextureExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F56E1D926C53B400024E451 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F56E1DA26C53B400024E451 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F56E1DC26C53B410024E451 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		1F56E1DD26C53B410024E451 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		1F56E1DF26C53B410024E451 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		1F56E1E026C53B410024E451 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1F56E1E326C53B410024E451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,9 +36,29 @@
 		1F56E1E826C53B430024E451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F56E1EA26C53B430024E451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F56E1EB26C53B430024E451 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F91311C26C7C36600F27D7B /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		1F91311D26C7C36600F27D7B /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		1F91312026C7C3D200F27D7B /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		1F91312126C7C3D200F27D7B /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		1F91312526C7C87C00F27D7B /* SimpleNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleNode.h; sourceTree = "<group>"; };
+		1F91312626C7C87C00F27D7B /* SimpleNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleNode.m; sourceTree = "<group>"; };
+		1F91312926C7CC4700F27D7B /* NodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NodeViewController.h; sourceTree = "<group>"; };
+		1F91312A26C7CC4700F27D7B /* NodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NodeViewController.m; sourceTree = "<group>"; };
+		1F91312D26C7D70000F27D7B /* SpecNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecNode.h; sourceTree = "<group>"; };
+		1F91312E26C7D70000F27D7B /* SpecNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecNode.m; sourceTree = "<group>"; };
+		1F91313126CA002E00F27D7B /* MacroCons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroCons.h; sourceTree = "<group>"; };
+		1F91313326CA028100F27D7B /* UIImage+Additions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		1F91313426CA028100F27D7B /* UIImage+Additions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		1F91313726CA047100F27D7B /* TableNodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableNodeController.h; sourceTree = "<group>"; };
+		1F91313826CA047100F27D7B /* TableNodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableNodeController.m; sourceTree = "<group>"; };
+		1F91313B26CA073900F27D7B /* CardCellNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardCellNode.h; sourceTree = "<group>"; };
+		1F91313C26CA073900F27D7B /* CardCellNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardCellNode.m; sourceTree = "<group>"; };
+		1F91315D26CB48FD00F27D7B /* PriceNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceNode.h; sourceTree = "<group>"; };
+		1F91315E26CB48FD00F27D7B /* PriceNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceNode.m; sourceTree = "<group>"; };
+		1F91316126CB4C3100F27D7B /* CardCellNodeDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardCellNodeDataProtocol.h; sourceTree = "<group>"; };
+		3EB25CD6244D178073B45E3D /* Pods_TextureExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53743DCF1A2897010CD00CA1 /* Pods-TextureExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExample.debug.xcconfig"; path = "Target Support Files/Pods-TextureExample/Pods-TextureExample.debug.xcconfig"; sourceTree = "<group>"; };
 		62D8733C52E7ADAA8F6A00E0 /* Pods-TextureExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExample.release.xcconfig"; path = "Target Support Files/Pods-TextureExample/Pods-TextureExample.release.xcconfig"; sourceTree = "<group>"; };
-		AD9C1DB259C9FAF039D1E8FF /* libPods-TextureExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TextureExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F39B15C5BEB0BF1BAE6DF37 /* libPods-TextureExample.a in Frameworks */,
+				9D92BF42B787EF799DB6BC39 /* Pods_TextureExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +79,6 @@
 				53743DCF1A2897010CD00CA1 /* Pods-TextureExample.debug.xcconfig */,
 				62D8733C52E7ADAA8F6A00E0 /* Pods-TextureExample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,15 +105,33 @@
 			children = (
 				1F56E1D926C53B400024E451 /* AppDelegate.h */,
 				1F56E1DA26C53B400024E451 /* AppDelegate.m */,
-				1F56E1DC26C53B410024E451 /* SceneDelegate.h */,
-				1F56E1DD26C53B410024E451 /* SceneDelegate.m */,
+				1F56E1E526C53B430024E451 /* Assets.xcassets */,
+				1F91312026C7C3D200F27D7B /* BaseViewController.h */,
+				1F91312126C7C3D200F27D7B /* BaseViewController.m */,
+				1F91311C26C7C36600F27D7B /* ExampleViewController.h */,
+				1F91311D26C7C36600F27D7B /* ExampleViewController.m */,
+				1F56E1EA26C53B430024E451 /* Info.plist */,
+				1F56E1E726C53B430024E451 /* LaunchScreen.storyboard */,
+				1F91313126CA002E00F27D7B /* MacroCons.h */,
+				1F56E1EB26C53B430024E451 /* main.m */,
+				1F56E1E226C53B410024E451 /* Main.storyboard */,
+				1F91312926C7CC4700F27D7B /* NodeViewController.h */,
+				1F91312A26C7CC4700F27D7B /* NodeViewController.m */,
+				1F91312526C7C87C00F27D7B /* SimpleNode.h */,
+				1F91312626C7C87C00F27D7B /* SimpleNode.m */,
+				1F91312D26C7D70000F27D7B /* SpecNode.h */,
+				1F91312E26C7D70000F27D7B /* SpecNode.m */,
+				1F91313326CA028100F27D7B /* UIImage+Additions.h */,
+				1F91313426CA028100F27D7B /* UIImage+Additions.m */,
 				1F56E1DF26C53B410024E451 /* ViewController.h */,
 				1F56E1E026C53B410024E451 /* ViewController.m */,
-				1F56E1E226C53B410024E451 /* Main.storyboard */,
-				1F56E1E526C53B430024E451 /* Assets.xcassets */,
-				1F56E1E726C53B430024E451 /* LaunchScreen.storyboard */,
-				1F56E1EA26C53B430024E451 /* Info.plist */,
-				1F56E1EB26C53B430024E451 /* main.m */,
+				1F91313726CA047100F27D7B /* TableNodeController.h */,
+				1F91313826CA047100F27D7B /* TableNodeController.m */,
+				1F91316126CB4C3100F27D7B /* CardCellNodeDataProtocol.h */,
+				1F91313B26CA073900F27D7B /* CardCellNode.h */,
+				1F91313C26CA073900F27D7B /* CardCellNode.m */,
+				1F91315D26CB48FD00F27D7B /* PriceNode.h */,
+				1F91315E26CB48FD00F27D7B /* PriceNode.m */,
 			);
 			path = TextureExample;
 			sourceTree = "<group>";
@@ -96,7 +139,7 @@
 		B8B29D6AFBBACCB95738631C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD9C1DB259C9FAF039D1E8FF /* libPods-TextureExample.a */,
+				3EB25CD6244D178073B45E3D /* Pods_TextureExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +155,7 @@
 				1F56E1D226C53B400024E451 /* Sources */,
 				1F56E1D326C53B400024E451 /* Frameworks */,
 				1F56E1D426C53B400024E451 /* Resources */,
+				15537F31798F7C013B28F5B2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -167,6 +211,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		15537F31798F7C013B28F5B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextureExample/Pods-TextureExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TextureExample/Pods-TextureExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TextureExample/Pods-TextureExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A7463532036D0339A41BC231 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,9 +258,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F56E1E126C53B410024E451 /* ViewController.m in Sources */,
+				1F91312726C7C87C00F27D7B /* SimpleNode.m in Sources */,
+				1F91313926CA047100F27D7B /* TableNodeController.m in Sources */,
+				1F91312226C7C3D200F27D7B /* BaseViewController.m in Sources */,
+				1F91313D26CA073900F27D7B /* CardCellNode.m in Sources */,
+				1F91311E26C7C36600F27D7B /* ExampleViewController.m in Sources */,
+				1F91313526CA028100F27D7B /* UIImage+Additions.m in Sources */,
+				1F91312B26C7CC4700F27D7B /* NodeViewController.m in Sources */,
 				1F56E1DB26C53B400024E451 /* AppDelegate.m in Sources */,
+				1F91312F26C7D70000F27D7B /* SpecNode.m in Sources */,
 				1F56E1EC26C53B430024E451 /* main.m in Sources */,
-				1F56E1DE26C53B410024E451 /* SceneDelegate.m in Sources */,
+				1F91315F26CB48FD00F27D7B /* PriceNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BY4SK3N8B6;
 				INFOPLIST_FILE = TextureExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -365,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BY4SK3N8B6;
 				INFOPLIST_FILE = TextureExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
