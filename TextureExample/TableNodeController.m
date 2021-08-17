@@ -47,15 +47,21 @@
     return self.dataSource.count;
 }
 
-///// This will be called on the main thread
-//- (ASCellNode *)tableNode:(ASTableNode *)tableNode nodeForRowAtIndexPath:(NSIndexPath *)indexPath {}
+/// This will be called on the main thread
+//- (ASCellNode *)tableNode:(ASTableNode *)tableNode nodeForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    id<CardCellNodeDataProtocol> data = self.dataSource[indexPath.item];
+//    CardCellNode *cellNode = [CardCellNode new];
+//    [cellNode setCardCellNode:data];
+//    return cellNode;
+//}
 
 
-/// Must be thread-safe (can be called on the main thread or a background queue
+/// ASCellNodeBlock must be thread-safe (can be called on the main thread or a background queue
 - (ASCellNodeBlock)tableNode:(ASTableNode *)tableNode nodeBlockForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return ^{
+    id<CardCellNodeDataProtocol> data = self.dataSource[indexPath.item];
+    return ^ASCellNode *(){
         CardCellNode *cellNode = [CardCellNode new];
-        [cellNode setCardCellNode:self.dataSource[indexPath.item]];
+        [cellNode setCardCellNode:data];
         return cellNode;
     };
 }
