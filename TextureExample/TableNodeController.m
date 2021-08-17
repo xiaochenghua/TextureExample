@@ -34,6 +34,14 @@
     
     self.tableNode.view.tableFooterView = [UIView new];
     [self.view addSubnode:self.tableNode];
+    
+    // Observer
+//    [self.tableNode addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+//    [self.tableNode.view addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"%@ %@ %@",NSStringFromClass([object class]), keyPath, change[NSKeyValueChangeNewKey]);
 }
 
 - (void)viewDidLayoutSubviews {
