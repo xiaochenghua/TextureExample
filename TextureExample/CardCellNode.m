@@ -99,10 +99,10 @@
     for (NSString *tag in tags) {
         ASButtonNode *tagNode = [ASButtonNode new];
         [tagNode setAttributedTitle:[[NSAttributedString alloc] initWithString:tag attributes:@{
-            NSFontAttributeName: [UIFont systemFontOfSize:9 weight:UIFontWeightMedium],
+            NSFontAttributeName: [UIFont systemFontOfSize:10 weight:UIFontWeightRegular],
             NSForegroundColorAttributeName: UIColor.whiteColor,
         }] forState:UIControlStateNormal];
-        tagNode.contentEdgeInsets = UIEdgeInsetsMake(1.5, 3, 1.5, 3);
+        tagNode.contentEdgeInsets = UIEdgeInsetsMake(1, 2, 1, 2);
         [self addSubnode:tagNode];
         [self.tags addObject:tagNode];
     }

@@ -22,6 +22,7 @@
 		1F91313926CA047100F27D7B /* TableNodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91313826CA047100F27D7B /* TableNodeController.m */; };
 		1F91313D26CA073900F27D7B /* CardCellNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91313C26CA073900F27D7B /* CardCellNode.m */; };
 		1F91315F26CB48FD00F27D7B /* PriceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91315E26CB48FD00F27D7B /* PriceNode.m */; };
+		1F91316526CBA57F00F27D7B /* FramesPerSecondMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91316426CBA57F00F27D7B /* FramesPerSecondMonitor.m */; };
 		9D92BF42B787EF799DB6BC39 /* Pods_TextureExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB25CD6244D178073B45E3D /* Pods_TextureExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		1F91315D26CB48FD00F27D7B /* PriceNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PriceNode.h; sourceTree = "<group>"; };
 		1F91315E26CB48FD00F27D7B /* PriceNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PriceNode.m; sourceTree = "<group>"; };
 		1F91316126CB4C3100F27D7B /* CardCellNodeDataProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardCellNodeDataProtocol.h; sourceTree = "<group>"; };
+		1F91316326CBA57F00F27D7B /* FramesPerSecondMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FramesPerSecondMonitor.h; sourceTree = "<group>"; };
+		1F91316426CBA57F00F27D7B /* FramesPerSecondMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FramesPerSecondMonitor.m; sourceTree = "<group>"; };
 		3EB25CD6244D178073B45E3D /* Pods_TextureExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextureExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53743DCF1A2897010CD00CA1 /* Pods-TextureExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExample.debug.xcconfig"; path = "Target Support Files/Pods-TextureExample/Pods-TextureExample.debug.xcconfig"; sourceTree = "<group>"; };
 		62D8733C52E7ADAA8F6A00E0 /* Pods-TextureExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureExample.release.xcconfig"; path = "Target Support Files/Pods-TextureExample/Pods-TextureExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				1F91313C26CA073900F27D7B /* CardCellNode.m */,
 				1F91315D26CB48FD00F27D7B /* PriceNode.h */,
 				1F91315E26CB48FD00F27D7B /* PriceNode.m */,
+				1F91316326CBA57F00F27D7B /* FramesPerSecondMonitor.h */,
+				1F91316426CBA57F00F27D7B /* FramesPerSecondMonitor.m */,
 			);
 			path = TextureExample;
 			sourceTree = "<group>";
@@ -259,6 +264,7 @@
 			files = (
 				1F56E1E126C53B410024E451 /* ViewController.m in Sources */,
 				1F91312726C7C87C00F27D7B /* SimpleNode.m in Sources */,
+				1F91316526CBA57F00F27D7B /* FramesPerSecondMonitor.m in Sources */,
 				1F91313926CA047100F27D7B /* TableNodeController.m in Sources */,
 				1F91312226C7C3D200F27D7B /* BaseViewController.m in Sources */,
 				1F91313D26CA073900F27D7B /* CardCellNode.m in Sources */,

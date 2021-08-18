@@ -116,7 +116,7 @@
             [CardCellNodeData dataWithImageUrl:@"https://img13.360buyimg.com/mobilecms/s220x220_jfs/t1/172378/15/11866/90202/60b0dd41Eecd3c8cf/bfdbe63c1c53ecea.jpg!cc_220x220!q70.dpg.webp"
                                          title:@"汰渍净白洗衣粉5kg"
                                           desc:@"爆款惊爆价"
-                                          tags:@[@"自营"]
+                                          tags:@[@"京东自营"]
                                   sellingPrice:@"¥29.9"
                                  originalPrice:@"39.9"
                                     onSelected:self.onSelectedBlock],

@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "FramesPerSecondMonitor.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +25,9 @@
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+    
+    [[FramesPerSecondMonitor monitor] open];
+    
     return YES;
 }
 
