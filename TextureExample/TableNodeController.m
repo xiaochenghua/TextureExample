@@ -44,8 +44,8 @@
     NSLog(@"%@ %@ %@",NSStringFromClass([object class]), keyPath, change[NSKeyValueChangeNewKey]);
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
     self.tableNode.frame = self.view.bounds;
 }
 
