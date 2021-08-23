@@ -32,8 +32,10 @@
         [self presentViewController:alertController animated:YES completion:nil];
     };
     
-    self.tableNode.view.tableFooterView = [UIView new];
+//    [self.view addSubnode:self.node];
+//    self.tableNode.view.tableFooterView = [UIView new];
     [self.view addSubnode:self.tableNode];
+//    [self.node addSubnode:self.tableNode];
     
     // Observer
 //    [self.tableNode addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
@@ -51,6 +53,10 @@
 
 #pragma mark - ASTableDataSource
 
+//- (NSInteger)numberOfSectionsInTableNode:(ASTableNode *)tableNode {
+//    return 1;
+//}
+
 - (NSInteger)tableNode:(ASTableNode *)tableNode numberOfRowsInSection:(NSInteger)section {
     return self.dataSource.count;
 }
@@ -58,16 +64,20 @@
 /// This will be called on the main thread
 //- (ASCellNode *)tableNode:(ASTableNode *)tableNode nodeForRowAtIndexPath:(NSIndexPath *)indexPath {
 //    id<CardCellNodeDataProtocol> data = self.dataSource[indexPath.item];
+//    NSLog(@"-----%@%@------", NSStringFromSelector(_cmd), [NSThread currentThread]);
 //    CardCellNode *cellNode = [CardCellNode new];
 //    [cellNode setCardCellNode:data];
 //    return cellNode;
 //}
 
 
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+
 /// ASCellNodeBlock must be thread-safe (can be called on the main thread or a background queue
 - (ASCellNodeBlock)tableNode:(ASTableNode *)tableNode nodeBlockForRowAtIndexPath:(NSIndexPath *)indexPath {
     id<CardCellNodeDataProtocol> data = self.dataSource[indexPath.item];
-    return ^ASCellNode *(){
+    return ^ASCellNode *() {
+        NSLog(@"-----%@%@------", NSStringFromSelector(_cmd), [NSThread currentThread]);
         CardCellNode *cellNode = [CardCellNode new];
         [cellNode setCardCellNode:data];
         return cellNode;

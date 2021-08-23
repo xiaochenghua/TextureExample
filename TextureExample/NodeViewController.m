@@ -29,6 +29,12 @@
     [self node2Example];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [UIView animateWithDuration:2 animations:^{
+        self.simpleNode.transform = CATransform3DMakeRotation(3.14, 0, 0, 1);
+    }];
+}
+
 - (void)node1Example {
     [self.view addSubnode:self.simpleNode];
 }
